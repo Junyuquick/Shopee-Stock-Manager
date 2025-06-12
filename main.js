@@ -1,6 +1,5 @@
 const CryptoJS = require("crypto-js");
 
-//test this
 
 const button = document.getElementById('startButton');
 

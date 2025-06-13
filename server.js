@@ -9,12 +9,12 @@ const port = 443;
 //middleware to parse JSON
 app.use(express.json());
 
-app.use("./data", apiRoutes);
+app.use("/data", apiRoutes);
 
 
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "public", "index.html"))
-})
+    res.sendFile(path.join(__dirname, "public", "index.html"));
+});
 
 app.listen(port, () => {
     console.log(`server runing on https://localhost:${port}`);

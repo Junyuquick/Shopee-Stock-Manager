@@ -1,20 +1,30 @@
+const express = require("express");
 const fs = require("node:fs");
 const path = require("path");
+const serverless = require("serverless-http");
 
-const filePath = path.join(__dirname, "public", "index.html");
-const html = fs.readFileSync(filePath, { encoding: 'utf8' });
+const app = express();
+const apiRoute = require("./src/api.js");
+
+
+app.use("/", apiRoute);
+
+
+module.exports.handler = serverless(app);
+
+// const filePath = path.join(__dirname, "public", "index.html");
+// const html = fs.readFileSync(filePath, { encoding: 'utf8' });
 
 //test
-const handler = async () => {
-    const response = {
-        statusCode: 200,
-        headers: {
-            'Content-Type': 'text/html',
-        },
-        body: html,
-    };
-    return response;
-};
+// const handler = async () => {
+//     const response = {
+//         statusCode: 200,
+//         headers: {
+//             'Content-Type': 'text/html',
+//         },
+//         body: html,
+//     };
+//     return response;
+// };
 
-module.exports = { handler };
-
+// module.exports = { handler };

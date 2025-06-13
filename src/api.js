@@ -3,7 +3,7 @@ const router = express.Router();
 const CryptoJS = require("crypto-js");
 
 
-router.get('/data', (req, res) => {
+router.get('/', (req, res) => {
     res.json({message: "Hello World"})
 })
 

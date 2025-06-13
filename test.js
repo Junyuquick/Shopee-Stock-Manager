@@ -5,7 +5,7 @@ const filePath = path.join(__dirname, "..", "public", "index.html");
 const html = fs.readFileSync(filePath, { encoding: 'utf8' });
 
 //test
-export const handler = async () => {
+const handler = async () => {
     const response = {
         statusCode: 200,
         headers: {
@@ -15,3 +15,6 @@ export const handler = async () => {
     };
     return response;
 };
+
+module.exports = { handler };
+

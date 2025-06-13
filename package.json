@@ -3,6 +3,5 @@
     "crypto-js": "^4.2.0",
     "express": "^5.1.0",
     "yaml": "^2.8.0"
-  },
-  "main": "test.js"
+  }
 }

@@ -1,7 +1,7 @@
 const fs = require("node:fs");
 const path = require("path");
 
-const filePath = path.join(__dirname, "..", "public", "index.html");
+const filePath = path.join(__dirname, "public", "index.html");
 const html = fs.readFileSync(filePath, { encoding: 'utf8' });
 
 //test

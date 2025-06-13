@@ -1,7 +1,6 @@
 
-// const button = document.getElementById('startButton');
+const button = document.getElementById('startButton');
 
-// button.addEventListener('click', function() {
-//     startFunction();    
-
-// });
+button.addEventListener('click', function() {
+    console.log("clicked once");
+});

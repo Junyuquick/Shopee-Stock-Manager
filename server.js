@@ -6,7 +6,7 @@
 // const path = require("path");
 // const port = 443;
 
-// //middleware to parse JSON..
+// //middleware to parse JSON.
 // app.use(express.json());
 
 // app.use("/data", apiRoutes);

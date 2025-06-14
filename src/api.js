@@ -27,7 +27,8 @@ router.get("/shop", async (req, res) => {
 
     const partner_key = "776770536c46555a434c76717769625248664f4379414379494241764243494a";
 
-    const timestamp = Date.now();
+    const timestamp = Math.floor(Date.now() / 1000);
+    // const timestamp = Date.now();
 
     //left access token and shop id, can be done after using azure as server, cant localhost
     const access_token = "7a52667666526c7163656f4152757145";

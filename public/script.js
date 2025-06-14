@@ -15,7 +15,7 @@ button.addEventListener('click', function() {
     //     });
 });
 
-// function to retrieve shop data
+// function to retrieve shop dataff
 function startFunction() {
 
     fetch("https://quickjunyu.com/shop")

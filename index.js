@@ -6,6 +6,8 @@ const serverless = require("serverless-http");
 const app = express();
 const apiRoute = require("./src/api.js");
 
+app.use(express.static(path.join(__dirname, "public")));
+
 //TES
 app.use("/", apiRoute);
 

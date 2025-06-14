@@ -1,11 +1,12 @@
 const express = require("express");
 const router = express.Router();
+const path = require("path");
 const CryptoJS = require("crypto-js");
 
 
-router.get('/', (req, res) => {
-    res.json({message: "Hello World"})
-})
+router.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname, "..", "public", "index.html"));
+});
 
 module.exports = router;
 

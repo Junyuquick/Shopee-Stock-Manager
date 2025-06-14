@@ -9,7 +9,7 @@ const apiRoute = require("./src/api.js");
 // app.use(express.static(path.join(__dirname, "public")));
 
 
-
+app.use(express.json());
 app.use("/", apiRoute);
 
 

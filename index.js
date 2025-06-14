@@ -8,10 +8,7 @@ const apiRoute = require("./src/api.js");
 
 // app.use(express.static(path.join(__dirname, "public")));
 
-app.get("/script", (req, res) => {
-    // Send the script.js file located in the 'public' directory
-    res.sendFile(path.join(__dirname, "public", "script.js"));
-});
+
 
 app.use("/", apiRoute);
 

@@ -12,6 +12,11 @@ router.get("/apple", (req, res) => {
     res.send("apple");
 });
 
+app.get("/script", (req, res) => {
+    // Send the script.js file located in the 'public' directory
+    res.sendFile(path.join(__dirname, "..", "public", "script.js"));
+});
+
 module.exports = router;
 
 // function startFunction() {

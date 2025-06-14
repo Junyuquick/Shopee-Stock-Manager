@@ -6,9 +6,13 @@ const serverless = require("serverless-http");
 const app = express();
 const apiRoute = require("./src/api.js");
 
-app.use(express.static(path.join(__dirname, "public")));
+// app.use(express.static(path.join(__dirname, "public")));
 
-//TES
+app.get("/script", (req, res) => {
+    // Send the script.js file located in the 'public' directory
+    res.sendFile(path.join(__dirname, "public", "script.js"));
+});
+
 app.use("/", apiRoute);
 
 

@@ -8,6 +8,10 @@ router.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "..", "public", "index.html"));
 });
 
+router.get("/apple", (req, res) => {
+    res.send("apple");
+});
+
 module.exports = router;
 
 // function startFunction() {

@@ -5,12 +5,16 @@ const serverless = require("serverless-http");
 
 const app = express();
 const apiRoute = require("./src/api.js");
+const shopeeAuthRoute = require("./src/shopeeAuth.js");
+const shopeeApiRoute = require("./src/shopeeAPI.js");
 
 // app.use(express.static(path.join(__dirname, "public")));
 
 
 app.use(express.json());
 app.use("/", apiRoute);
+app.use("/shopeeauth", shopeeAuthRoute);
+app.use("/shopeeapi", shopeeApiRoute);
 
 
 module.exports.handler = serverless(app);

@@ -1,4 +1,4 @@
-const { SecretsManagerClient, GetSecretValueCommand } = require("aws-sdk");
+const { SecretsManagerClient, GetSecretValueCommand } = require("@aws-sdk/client-secrets-manager");
 const { GoogleAuth } = require("google-auth-library");
 const { google } = require("googleapis");
 

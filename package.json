@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "aws-sdk": "^2.1692.0",
+    "@aws-sdk/client-secrets-manager": "^3.830.0",
     "axios": "^1.10.0",
     "crypto-js": "^4.2.0",
     "express": "^5.1.0",

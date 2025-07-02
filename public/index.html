@@ -3,10 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/script" defer></script>
+    <script src="/shopee/script" defer></script>
     <title>Quick Jun Yu</title>
 </head>
 <body>
-    <button id="startButton">Dont Click Me</button>
+    <h1>Select an Option</h1>
+    <form id="shopeeForm">
+        <label for="dateOptions">Choose an option:</label>
+        <select id="dateOptions" name="options">
+            <option value="tdy">Today</option>
+            <option value="yst">Yesterday</option>
+        </select>
+        <button id="startButton">Submit</button>
+    </form> <br>
+
+    <div id="responseMessage"></div><br><br>
+
+    <form id="initForm">
+        <label>Initiliasing new Code(once every 365 days):</label>
+        <button id="initialiseButton">Begin</button>
+    </form><br>
+
+    <div id="initResponseMessage"></div>
+
 </body>
 </html>
